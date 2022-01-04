@@ -3,7 +3,7 @@ This is a one page website of a business company enterprenuer promotional. It ha
 
 ## Demo
 - Live
-    - [Facebook SignUp](https://mrhrifat.github.io/alecto)
+    - [Alecto](https://mrhrifat.github.io/alecto)
 
 ## How To Contribute
 - Fork the repository.
