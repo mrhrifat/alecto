@@ -1,0 +1,498 @@
+/*
+	Author: Rakibul Hassan Rifat
+
+*/
+
+/*
+	=========Index=========
+	01) Global CSS
+	02)	Header Section 
+	03) About Section
+	04) Purpose Section
+	05) Proposal Section
+	06) Testimonial Section
+	07) Our Service Section
+	08) Team Section
+	09) Pricing Section
+	10) Location Section
+	11) Try Us Section
+	12) Footer Section
+	========================
+*/
+
+
+
+/*========Import Section Start========*/
+
+@import url('../css/fonts.css');
+
+/*========Import Section End========*/
+
+/*========Variable Section Start========*/
+:root{
+
+	/*Theme Colors*/
+	--text-gray:#3f4954;
+	--text-light:#686666da;
+	--bg-color:#0f0f0f;
+	--white:#ffffff;
+	--mid-night: #104f55;
+
+	/*Gradient Color*/
+	--sky:linear-gradient(120deg,#a1c4fd 0%, #c2e9fb 100%);
+
+	--shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+	--box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+	/*=========Font Family==========*/
+
+	/*Abel -Navbar*/
+	--Abel:'Abel', cursive;
+
+	/*Josefin_Sans*/
+	--Josefin:'Josefin', cursive;
+
+	/*Lexend*/
+	--Lexend:'Lexend', cursive;
+}
+/*========Variable Section End========*/
+
+/*=======01) Global CSS Section=======*/
+h1{
+	font-family: var(--Josefin);
+	font-size: 2.5rem;
+}
+h2{
+	font-family:var(--Lexend);
+	font-size: 28px;
+	color: #576671;
+}
+h3{
+	font-family: var(--Abel);
+	font-size: 1.5rem;
+}
+p{
+	font-family: var(--Lexend);
+	font-size: 13px;
+	text-align: center;
+	line-height: 35px;
+}
+span{
+	font-family: var(--Abel);
+}
+
+section {
+	padding: 90px 0;
+}
+.img-center{
+	display: block;
+	margin: 0 auto;
+}
+.no-padding{
+	padding: 0;
+}
+.primary{
+	color: #17daa3;
+}
+.heading-space{
+	padding-bottom: 40px;
+}
+.topbar{
+	/*position: fixed;
+	width: 100%;
+	top: -1px;
+	left: 0;
+	right: 0;*/
+	background: var(--mid-night);
+	box-shadow: var(--box-shadow);
+	z-index: 999;
+	transition: all 1s ease;
+	padding:0;
+}
+
+
+/*=======02) Header Section=======*/
+header .navbar-brand img{
+	width: 50%;
+	filter: brightness(0)invert(1);
+}
+header .navbar-brand span{
+	font-family: 'Dosis', sans-serif;
+}
+header ul li{
+	font-variant: small-caps;
+	padding: 0 10px;
+}
+header ul li a:hover{
+	color: #17daa3 !important;
+}
+#slider1 ol li,
+#slider2 ol li{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+#slider1 .carousel-caption{
+	top: 285px;
+}
+#slider1 .carousel-caption button{
+	border-radius: 20px 20px;
+}
+
+/*========03) About Section=======*/
+#about span,
+#our-service span,
+#team span,
+#pricing span {
+	height: 5px;
+	width: 50px;
+	display: inline-block;
+	background: #424242;
+}
+.abt-content-logo {
+	color: #87949e;
+	font-size: 40px;
+	width: 120px;
+	background: #edeff1;
+	height: 120px;
+	margin: 0 auto;
+	border-radius: 50%;
+	padding: 20px;
+}
+.abt-content-logo:hover{
+	background: #17daa3;
+	color: #fff;
+	cursor: pointer;
+}
+.abt-head{
+	margin-top: 30px;
+}
+.abt-btn{
+	margin-top: 50px;
+	background: #0bca94;
+	border: 1px solid #0bca94;
+	padding: 8px 22px;
+	border-radius: 20px 20px;
+}
+.abt-btn:hover{
+	background: #fff;
+	border: 1px solid #0bca94;
+	color: #333;
+	padding: 8px 22px;
+}
+
+/*========04) Purpose Section=======*/
+#purpose{
+	background: #f9f9fa;
+}
+#purpose img,
+#proposal img{
+	max-height: 400px;
+	border-radius: 5px;
+}
+.purpose-content,
+.proposal-content{
+	padding: 55px 0;
+}
+.purpose-content small,
+.proposal-content small{
+	display: block;
+	line-height: 30px;
+	padding: 25px 0px;
+	margin-right: 80px;
+	text-align: justify;
+}
+/*========05) Proposal Section=======*/
+
+
+/*========06) Testimonial Section=======*/
+.crs-img-1{
+	background: url('../img/slider-img1.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+.crs-img-2{
+	background: url('../img/slider-img2.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+.crs-img-3{
+	background: url('../img/slider-img3.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+.crs-img-4{
+	background: url('../img/slider-img4.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+#myCarousel .carousel-item{
+	height: 500px;
+}
+#myCarousel .carousel-caption{
+	top: 75px;
+}
+#myCarousel .carousel-caption img{
+	width: 90px;
+	border-radius: 50%;
+	height: 90px;
+}
+#myCarousel .carousel-caption h4{
+	padding: 15px 0;
+	color:white;
+}
+#myCarousel .carousel-caption span{
+	color: #0bca94;
+}
+#myCarousel .carousel-caption ssmallpan{
+	color:white;
+}
+
+
+/*========07) Our Service Section*/
+
+#our-service{
+	background: #f9f9fa;
+}
+#our-service .os-main{
+	margin-top: 50px;
+}
+#our-service .os-logo{
+	font-size: 35px;
+	color: #17daa3;
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	padding: 13px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+/*========08) Team Section*/
+#team .card{
+	transition: all 0.7s ease;
+}
+#team .card:hover{
+	border: none;
+	background:#17daa3;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: var(--box-shadow);
+	transform: scale(1.1);
+}
+
+
+/*========09) Pricing Section*/
+
+#pricing{
+	background: #f9f9fa;
+}
+#pricing .card h2{
+	color: #17daa3;
+	cursor: pointer;
+}
+#pricing .card-header{
+	padding: 30px 10px;
+}
+#pricing .card-footer{
+	padding: 1px;
+	overflow: hidden;
+}
+#pricing .btn{
+	background: #17daa3;
+	border-radius: 2px;
+	border-style: none;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+}
+#pricing .btn:hover{
+	transform: scale(1.1);
+}
+#pricing .btn:focus, #pricing .btn:active{
+	outline: none !important;
+   	box-shadow: none;
+}
+#pricing .svg-inline--fa.fa-briefcase.fa-w-16.float-right{
+	font-size: 20px;
+	margin-left: 115px;
+}
+
+/*========10) Location Section*/
+
+
+/*========11) Try Us Section*/
+#try-us {
+	background: url('../img/try.png')no-repeat;
+	background-size: cover;
+	min-height: 400px;
+	background-position: center;
+}
+
+
+/*========12) Footer Section=======*/
+
+
+footer{
+	background: var(--bg-color);
+	position: relative;
+}
+footer h3{
+	color:var(--white);
+}
+footer form .btn-custom{
+	padding: 8px;
+	border-radius: 0 !important;
+	width: 100%;
+	margin-top: 10px;
+}
+footer img{
+	margin-bottom:10px;
+}
+footer a{
+	color: var(--white);
+	padding: 15px 5px;
+}
+footer a:hover{
+	color: var(--mid-night);
+}
+footer p{
+	color: var(--text-gray);
+	text-align: center;
+}
+
+/*=======Media Query======*/
+@media(max-width: 991px){
+	#slider1 .carousel-caption{
+		top: 220px;
+	}
+	#team .team-sqd , #pricing .pricing-sqd{
+		margin-bottom:10px;
+	}
+}
+@media(max-width: 919px){
+	
+	footer .container,
+	footer .container .row{
+		margin: 0;
+	}
+	footer #insta{
+		display: contents;
+	}
+
+}
+@media(max-width: 767px){
+	#slider1 .carousel-caption{
+		top: 155px;
+	}
+
+	#pricing .card .prcs-footer label:last-child{
+		width: 10%;
+	}
+	footer .footer-up{
+		margin-bottom: 15px;
+	}
+	footer #insta , footer #follow{
+		width: 65%;
+	}
+}
+
+@media(max-width: 575px){	
+	header .navbar-brand img {
+		width: 40%;
+	}
+	#slider1 .carousel-caption{
+		top: 100px;
+	}
+	#slider1 .carousel-caption p{
+		line-height: 1;
+	}
+	.purpose-content, .proposal-content {
+		margin: 0 auto;
+		width: 85%;
+	}
+}
+@media(max-width: 490px){
+	#slider1 .carousel-caption{
+		top: 75px;
+		}	#slider1 .carousel-caption h2{
+			font-size: 24px;
+		}
+		#myCarousel .carousel-caption {
+			top: 17px;
+		}
+		#myCarousel .carousel-caption h4 {
+			font-size: 19px;
+		}
+		#myCarousel .carousel-caption img {
+			width: 60px;
+			height: 60px;
+		}
+
+	}
+
+	@media(max-width: 395px){
+		#slider1 .carousel-caption{
+			top: 75px;
+		}
+		header .navbar-brand{
+			margin: 0;
+			width: 80%;
+		}
+		#slider1 .carousel-caption p{
+			display: none;
+		}
+		.abt-content h4{
+			margin-top: 0;
+		}
+		.abt-content small{
+			margin-bottom: 10px;
+			display: block;
+		}
+		#purpose{
+			padding-bottom: 0;
+		}
+
+		#proposal{
+			padding: 0;
+		}
+		#myCarousel .carousel-caption h4 {
+			padding: 0;
+		}
+		footer p {
+			width: 78%;
+		}
+	}
+
+	@media(max-width: 335px){
+		header nav .navbar-toggler{
+			margin: 0 auto;
+			width: 20%;
+			border: none;
+		}
+		#slider1 .carousel-caption h2{
+			font-size: 18px;
+		}
+		#slider1 .carousel-caption button{
+			padding: 6px;
+			display: block;
+			font-size: 10px;
+			margin: 0 auto;
+			border-radius: 15px 15px;
+		}
+		.purpose-content small, .proposal-content small{
+			line-height: 1.5;
+		}
+		#myCarousel .carousel-caption {
+			top: 0px;
+		}
+		#slider2 .carousel-item h4{
+			font-size:15px;
+			margin-bottom: 0;
+		}
+		#myCarousel .carousel-caption small{
+			display: none;
+		}
+	}
